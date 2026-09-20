@@ -9,8 +9,6 @@
         #main-heading {
             color: rgb(255, 255, 255);
             text-align: center;
-            border: 2px solid rgb(255, 0, 255);
-            border-radius: 10px;
             background-color: rgb(255, 0, 255);
             
         }
@@ -20,9 +18,11 @@
         .Badabum {
             color: rgb(255, 0, 255);
             text-align: center;
-            border: 1px solid rgb(255, 255, 255);
+            border: 1px solid rgb(255, 0, 255);
             border-radius: 10px;
             background-color: rgb(255, 255, 255);
+            padding: 10px;
+            font-size: 1.4em;
         }
     </style>
     </head>
@@ -32,12 +32,11 @@
             <hr> <!--Horizontal line-->
             <h2 class="Badabum">WEB Technologies 1 (Front End)</h2>
         </div>
-        <hr>
         <div class="main_content">
             <h3 class="Badabum" >About me</h3>              
             <p style="color: rgb(230, 0, 255); text-align: center;">My name is <ins>Amirzhanov Ilkham</ins>. I am 19 years old. I am a student in the <ins>MT-2503</ins> group. I am interested in <ins>3d modeling</ins> and <ins>game development</ins>.</p>
             <hr>
-            <h3 class="Badabum">My hobbies</h3>
+            <h3 class="Badabum static-position">My hobbies</h3>
             <ol class="highlight">
                 <li>3d Modeling</li>
                 <li>Listening to Music</li>
@@ -54,17 +53,17 @@
             </ul>
             <hr>
             <h3 class="Badabum">Me</h3>
-            <img style="border: 1px solid rgb(255, 255, 255); border-radius: 10px ;" src="https://i.pinimg.com/736x/7b/50/e2/7b50e26c01d5db4dc502ad3ddfeff204.jpg" alt="Pinterest picture" width="200" height="200"> <br>
+            <img  class="absolute-position float-left" style="border: 1px solid rgb(255, 0, 255); border-radius: 10px ;" src="https://i.pinimg.com/736x/7b/50/e2/7b50e26c01d5db4dc502ad3ddfeff204.jpg" alt="Pinterest picture" width="200" height="200"> <br>
             <hr>
             <h3 class="Badabum">Sussy links</h3>
             <a class="highlight" href="https://i.pinimg.com/736x/e9/58/be/e958be327cad8f56bee6715dd5c403a9.jpg">Click if you wanna see yourself</a> <br><br>
             <a class="highlight" href="https://www.youtube.com/watch?v=QDia3e12czc">Do not click!!</a><br>
             <hr>
-            <h3 class="Badabum">Just an ordinary button</h3>
-            <button class="highlight">Click Me</button>
+            <h3 class="Badabum relative-position">Just an ordinary button</h3>
+            <button class="highlight ">Click Me</button>
             <hr>
             <h3 class="Badabum">My schedule</h3>
-            <table>
+            <table width="100%" style="margin: 20px auto;">
                 <tr>
                     <th>Subject</th>
                     <th>Day</th>
@@ -94,11 +93,26 @@
                 <br>
                 <input class="highlight" type="submit" value="Submit">
             </form>
+            <hr>
+            <h3 class="Badabum">Float and Clear</h3>
+            <div class="float-demo">
+                <div class="float-box float-left">
+                    Left
+                </div>
+                <div class="float-box float-right">
+                    Right
+                </div>
+                <p>
+                    Random text.
+                </p>
+                <p class="clear-element">
+                    Clear text.
+                </p>
+            </div>
         </div>
-        <div class="site-footer">
+        <div class="footer">
             <p>© 2026 Amirzhanov Ilkham</p>
             <p>Web Technologies 1 — CSS Assignment</p>
         </div>
-
     </body>
 </html>

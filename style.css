@@ -1,3 +1,6 @@
+html {
+    font-size: 16px;
+}
 body 
 {
     background-color:   rgb(47, 24, 109);
@@ -6,6 +9,7 @@ body
 table, th, td 
 {
     border:1px solid rgb(255, 0, 255);  
+    text-align: center;
 }
 th
 {
@@ -19,18 +23,78 @@ td
 }
 .header 
 {
+    width: 85%;
     background-color: rgb(255, 0, 255);
     color: rgb(255, 255, 255);
-    padding: 20px;
-    margin: 20px;
+    padding: 1.25rem;
+    margin: 1.25rem auto;
     text-align: center;
     border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
 }
 .main_content 
 {
+    width: 85%;
     background-color: rgb(255, 255, 255);
     color: rgb(47, 24, 109);
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 10px;
+    border: 1px solid rgb(255, 0, 255);
+}
+.footer 
+{
+    width: 85%;
+    background-color: rgb(255, 0, 255);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.static-position {
+    position: static;
+}
+
+.relative-position {
+    position: relative;
+    left: auto;
+}
+
+.absolute-position {
+    position: absolute;
+    right: 20px;
+    
+}   
+
+.float-demo {
+    padding: 20px;
+    border: 1px solid rgb(255, 0, 255);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(47, 24, 109);
+}
+
+.float-box {
+    width: 140px;
+    padding: 25px 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.float-left {
+    float: left;
+    background-color: rgb(47, 24, 109);
+}
+
+.float-right {
+    float: right;
+    background-color: rgb(225, 0, 255);
+}
+
+.clear-element {
+    clear: both;
 }
